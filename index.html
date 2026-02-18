@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sekhar Kumar | Official</title>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #1877f2, #e1306c, #25D366, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    width: 340px;
+    color: white;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid white;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #fff; }
+    to { box-shadow: 0 0 30px #25D366; }
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: block;
+    margin: 15px 0;
+    padding: 14px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.facebook { background: #1877f2; }
+.instagram { background: #e1306c; }
+.whatsapp { background: #25D366; }
+
+.btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 Background Music -->
+<audio autoplay loop>
+    <source src="music.m4a" type="audio/mp4">
+</audio>
+
+<div class="card">
+
+    <!-- 👤 Profile Photo -->
+    <img src="profile.jpg" alt="Sekhar Kumar" class="profile-img">
+
+    <h1>👑 Sekhar Kumar</h1>
+    <p>Connect with me on social media</p>
+
+    <!-- Facebook -->
+    <a class="btn facebook" href="https://www.facebook.com/share/1DjZMWBwQq/" target="_blank">
+        📘 Facebook
+    </a>
+
+    <!-- Instagram -->
+    <a class="btn instagram" href="https://www.instagram.com/kingsekhar.ok?igsh=MTZkajl0M2ltcDgxYg==" target="_blank">
+        📸 Instagram
+    </a>
+
+    <!-- WhatsApp -->
+    <a class="btn whatsapp" href="https://wa.me/919102235053" target="_blank">
+        💚 Chat on WhatsApp
+    </a>
+
+</div>
+
+</body>
+</html>
