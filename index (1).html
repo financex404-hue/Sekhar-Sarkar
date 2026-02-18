@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>👑 Sekhar Kumar | Official</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(-45deg,#1877f2,#e1306c,#25D366,#000);
+    background-size:400% 400%;
+    animation:bg 8s infinite alternate;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    100%{background-position:100% 50%;}
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    padding:25px;
+    width:350px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+.profile{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    margin-bottom:10px;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:8px;
+    border:none;
+}
+
+button,.btn{
+    display:block;
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border-radius:10px;
+    border:none;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.facebook{background:#1877f2;}
+.instagram{background:#e1306c;}
+.whatsapp{background:#25D366;}
+.telegram{background:#0088cc;}
+.email{background:#ff9800;}
+
+button:hover,.btn:hover{
+    transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+    <source src="music.m4a" type="audio/mp4">
+</audio>
+
+<div class="card">
+
+<img src="profile.jpg" class="profile">
+
+<h2>👑 Sekhar Kumar</h2>
+<p>💫 Dream Big | Work Hard | Stay Real</p>
+
+<!-- Social Buttons -->
+<a class="btn facebook" href="https://www.facebook.com/share/1DjZMWBwQq/" target="_blank">📘 Facebook</a>
+
+<a class="btn instagram" href="https://www.instagram.com/kingsekhar.ok?igsh=MTZkajl0M2ltcDgxYg==" target="_blank">📸 Instagram</a>
+
+<a class="btn whatsapp" href="https://wa.me/919102235053" target="_blank">💚 WhatsApp</a>
+
+<a class="btn telegram" href="https://t.me/shidhu667" target="_blank">✈ Telegram</a>
+
+<a class="btn email" href="mailto:sk72773814@gmail.com">📩 Send Email</a>
+
+<hr>
+
+<h3>💬 Chat With Me</h3>
+
+<input type="text" id="name" placeholder="Your Name">
+<textarea id="msg" placeholder="Type your message"></textarea>
+<button onclick="sendMsg()">Send via WhatsApp</button>
+
+</div>
+
+<script>
+function sendMsg(){
+    var name=document.getElementById("name").value;
+    var msg=document.getElementById("msg").value;
+    var phone="919102235053";
+    var url="https://wa.me/"+phone+"?text="
+    +encodeURIComponent("Name: "+name+"\nMessage: "+msg);
+    window.open(url,"_blank");
+}
+
+window.onload=function(){
+    setTimeout(function(){
+        alert("👋 Welcome to Sekhar's Official Website!");
+    },1000);
+}
+</script>
+
+</body>
+</html>
